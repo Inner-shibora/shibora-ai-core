@@ -1,17 +1,16 @@
-export default function AskPage() {
+export default function Ask() {
   return (
-    <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center">
-      <h1 className="text-4xl font-bold mb-6">Ask SHIBORA AI</h1>
-      <p className="text-lg max-w-xl text-center mb-10">
-        Type your philosophical question or doubt, and our AI Sage will respond.
+    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-8">
+      <h1 className="text-4xl font-bold mb-6">Ask Echo & Sage</h1>
+      <p className="text-center text-gray-400 max-w-xl mb-8">
+        What is the nature of existence?
       </p>
-      <input
-        className="px-4 py-2 w-80 rounded bg-gray-800 text-white border border-gray-600 focus:outline-none focus:ring"
-        placeholder="What is the nature of reality?"
+      <textarea
+        className="w-full max-w-lg p-4 text-black rounded-lg"
+        rows={4}
+        placeholder="Ask your question..."
       />
-      <button className="mt-4 px-6 py-2 rounded bg-blue-600 hover:bg-blue-700">
-        Ask
-      </button>
-    </main>
-  );
+      <button className="mt-4 px-6 py-2 bg-white text-black rounded-xl font-semibold">Ask</button>
+    </div>
+  )
 }

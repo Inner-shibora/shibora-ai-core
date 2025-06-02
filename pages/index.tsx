@@ -18,3 +18,17 @@ export default function Home() {
     </main>
   );
 }
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-8">
+      <h1 className="text-4xl md:text-6xl font-bold mb-6 text-center">Welcome to Shibora AI</h1>
+      <p className="text-center max-w-xl text-gray-400 mb-8">
+        Explore SHRA Token, AI conversations, and philosophical insights.
+      </p>
+      <div className="flex gap-4">
+        <a href="/whitepaper" className="px-6 py-2 rounded-lg bg-white text-black font-semibold">Whitepaper</a>
+        <a href="/ask" className="px-6 py-2 rounded-lg border border-white font-semibold">Ask AI</a>
+      </div>
+    </main>
+  )
+}
