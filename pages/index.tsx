@@ -24,7 +24,12 @@ export default function Home() {
         </Link>
         <Link href="https://raydium.io/swap/?input=sol&output=shra" target="_blank">
           <button className="border border-white px-6 py-2 rounded-2xl font-semibold hover:bg-white hover:text-black transition">
-            Buy on DEX
+            Buy SHRA with SOL
+          </button>
+        </Link>
+        <Link href="https://raydium.io/swap/?input=usdc&output=shra" target="_blank">
+          <button className="border border-white px-6 py-2 rounded-2xl font-semibold hover:bg-white hover:text-black transition">
+            Buy SHRA with USDC
           </button>
         </Link>
       </div>
