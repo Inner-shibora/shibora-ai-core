@@ -2,9 +2,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-8 space-y-6">
       <img src="/logo.jpeg" alt="Shibora Logo" className="w-32 opacity-90" />
-      
-      <h1 className="text-3xl md:text-4xl font-bold tracking-wide text-center">SHIBORA AI</h1>
-      
+
+      <h1 className="text-4xl font-bold tracking-wide text-center">SHIBORA AI</h1>
+
       <p className="text-gray-400 text-center max-w-xl">
         A decentralized AI movement. Explore. Question. Transcend.
       </p>
