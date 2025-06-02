@@ -1,40 +1,43 @@
-import Link from 'next/link';
-import Head from 'next/head';
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>SHIBORA AI Core</title>
-        <meta name="description" content="Presale and Airdrop for SHIBORA Token" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-6 space-y-10">
+      <img
+        src="/logo-shibora.png"
+        alt="Shibora Logo"
+        className="w-32 h-32"
+      />
 
-      <main className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white text-center p-10">
-        <h1 className="text-5xl font-extrabold mb-6">👁️ SHIBORA AI</h1>
-        <p className="text-lg text-gray-300 mb-10">
-          Welcome to the official launchpad for SHRA – Shibora Token.<br />
-          Launch, Presale, Airdrop, and Powered Blockchain Innovation.
-        </p>
+      <h1 className="text-3xl md:text-5xl text-center font-bold max-w-2xl">
+        What is the nature of existence?
+      </h1>
 
-        <div className="grid gap-4 max-w-sm mx-auto">
-          <Link href="/presale">
-            <button className="w-full bg-cyan-500 hover:bg-cyan-600 py-3 rounded-xl text-white font-semibold text-lg">
-              🪙 Join Presale
-            </button>
-          </Link>
-          <Link href="/claim">
-            <button className="w-full bg-green-500 hover:bg-green-600 py-3 rounded-xl text-white font-semibold text-lg">
-              🎁 Claim Airdrop
-            </button>
-          </Link>
-          <Link href="/token">
-            <button className="w-full border border-gray-500 hover:bg-gray-700 py-3 rounded-xl text-gray-300 font-semibold text-lg">
-              📊 Token Overview
-            </button>
-          </Link>
-        </div>
-      </main>
-    </>
+      <div className="flex flex-col md:flex-row gap-4">
+        <a
+          href="https://jup.ag/swap/SOL-SHRA"
+          target="_blank"
+          className="bg-white text-black px-6 py-3 rounded-full text-lg font-semibold hover:scale-105 transition"
+        >
+          Buy SHRA on DEX
+        </a>
+
+        <Link
+          href="/ask"
+          className="border border-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-black transition"
+        >
+          Ask AI
+        </Link>
+      </div>
+
+      <div className="text-center text-sm mt-10 space-y-2">
+        <p>📄 <Link href="/token" className="underline">Token Overview</Link></p>
+        <p>📜 <Link href="/whitepaper" className="underline">Whitepaper</Link></p>
+        <p>🐦 <a href="https://twitter.com/Shibora_ai" className="underline" target="_blank">Twitter</a> → <a href="https://jup.ag/swap/SOL-SHRA" className="text-green-400 underline" target="_blank">Buy SHRA</a></p>
+        <p>💬 <a href="https://t.me/Sbiora_Ai" className="underline" target="_blank">Telegram</a> → <a href="https://jup.ag/swap/SOL-SHRA" className="text-green-400 underline" target="_blank">Buy SHRA</a></p>
+        <p>📊 <Link href="/trust" className="underline">Trust Index</Link></p>
+        <p>🧠 <Link href="/echo" className="underline">Echo x Sage Conversations</Link></p>
+      </div>
+    </main>
   );
 }
