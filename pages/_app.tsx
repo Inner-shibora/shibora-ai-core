@@ -1,17 +1,15 @@
 // pages/_app.tsx
-import "@/styles/globals.css";
-import type { AppProps } from "next/app";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import '@/styles/globals.css'
+import type { AppProps } from 'next/app'
+import Navbar from '@/components/Navbar'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className="bg-black text-white min-h-screen flex flex-col justify-between">
+    <div className="min-h-screen bg-white text-black">
       <Navbar />
-      <main className="flex-grow">
+      <main className="p-4">
         <Component {...pageProps} />
       </main>
-      <Footer />
     </div>
-  );
+  )
 }
