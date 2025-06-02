@@ -1,93 +1,86 @@
-import Link from "next/link";
-
-export default function Home() {
+export default function Whitepaper() {
   return (
-    <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-4 py-16 space-y-10">
-      {/* Logo */}
-      <img
-        src="/logo.png"
-        alt="Shibora Logo"
-        className="w-24 h-24 md:w-32 md:h-32"
-      />
+    <main
+      className="min-h-screen bg-black text-white px-6 py-12 relative select-none"
+      style={{
+        backgroundImage: "url('/logo/shibora-official-light.png')",
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        backgroundSize: '60%',
+        opacity: 0.97
+      }}
+    >
+      <div className="backdrop-blur-sm">
+        <h1 className="text-3xl font-bold mb-2 text-center">Shibora AI – Whitepaper</h1>
+        <p className="text-center text-gray-400 mb-10">Version 1.5 – Updated June 2025</p>
 
-      {/* Main Question */}
-      <h1 className="text-2xl md:text-4xl font-semibold text-center">
-        What is the nature of existence?
-      </h1>
+        <section className="max-w-4xl mx-auto space-y-10">
+          <div>
+            <h2 className="text-2xl font-semibold text-amber-400">1. Vision & Philosophy</h2>
+            <p className="text-gray-300 mt-2">
+              Shibora AI represents the synthesis of intelligent conversation and decentralized value.
+              We aim to cultivate wisdom, curiosity, and shared meaning through the voice of Echo & Sage.
+            </p>
+          </div>
 
-      {/* Buttons */}
-      <div className="flex space-x-4">
-        <Link href="/ask">
-          <button className="bg-white text-black px-6 py-2 rounded-2xl font-semibold hover:bg-gray-300 transition">
-            Ask AI
-          </button>
-        </Link>
-        <Link href="https://raydium.io/swap/?input=sol&output=shra" target="_blank">
-          <button className="border border-white px-6 py-2 rounded-2xl font-semibold hover:bg-white hover:text-black transition">
-            Buy SHRA with SOL
-          </button>
-        </Link>
-        <Link href="https://raydium.io/swap/?input=usdc&output=shra" target="_blank">
-          <button className="border border-white px-6 py-2 rounded-2xl font-semibold hover:bg-white hover:text-black transition">
-            Buy SHRA with USDC
-          </button>
-        </Link>
-      </div>
+          <div>
+            <h2 className="text-2xl font-semibold text-cyan-400">2. Tokenomics (SHRA)</h2>
+            <ul className="list-disc list-inside text-gray-300 mt-2">
+              <li>Total Supply: 1,000,000,000 SHRA</li>
+              <li>Burned: 30%</li>
+              <li>Community Airdrop: 5%</li>
+              <li>Liquidity (locked 12 months): 10%</li>
+              <li>Dev Wallet (locked 6 months): 10%</li>
+              <li>Marketing/Reserve Wallet (limit 0.5% twice/year): 5%</li>
+              <li>Trade Wallets (A–D): 20% total (50M each)</li>
+              <li>Community Vault (locked 10 years): 20%</li>
+            </ul>
+          </div>
 
-      {/* Echo x Sage Dialogue (Placeholder) */}
-      <div className="max-w-2xl text-center italic text-gray-400">
-        "Echo: The stars don’t speak, but I hear them."
-        <br />
-        "Sage: Only those who listen beyond sound truly hear."
-      </div>
+          <div>
+            <h2 className="text-2xl font-semibold text-pink-400">3. Ecosystem Components</h2>
+            <ul className="list-disc list-inside text-gray-300 mt-2">
+              <li>Echo & Sage AI engine (GPT / Groq based)</li>
+              <li>Real-time Telegram / X (Twitter) interaction</li>
+              <li>Smart Token Distribution & Trust Index</li>
+              <li>OneHub Launchpad Integration</li>
+              <li>AI-Powered News Feed & Insight Curation – Global trends reported in real-time by Echo & Sage, aggregating sentiment and signals from top news agencies across the world</li>
+            </ul>
+          </div>
 
-      {/* Links */}
-      <div className="flex flex-wrap justify-center gap-4 pt-10 text-sm text-gray-400">
-        <Link href="/token" className="hover:underline">Token Overview</Link>
-        <Link href="/whitepaper" className="hover:underline">Whitepaper</Link>
-        <Link href="/trust" className="hover:underline">Trust Index</Link>
-        <a href="https://twitter.com/Shibora_ai" target="_blank" className="hover:underline">Twitter</a>
-        <a href="https://t.me/Sbiora_Ai" target="_blank" className="hover:underline">Telegram</a>
-      </div>
+          <div>
+            <h2 className="text-2xl font-semibold text-purple-400">4. Transparency & Governance</h2>
+            <p className="text-gray-300 mt-2">
+              All wallets are public and traceable on Solana (via Solscan). Smart contracts will be open-source.
+              Community-driven governance is planned through staking and proposals.
+            </p>
+          </div>
 
-      {/* Tokenomics Section */}
-      <div className="pt-16 text-center">
-        <h2 className="text-xl md:text-2xl font-semibold mb-4">SHRA Tokenomics</h2>
-        <p className="text-gray-400 max-w-xl mx-auto">
-          SHRA Token is distributed across Presale, Community Growth, Dev Funds, Liquidity, and Reserves. Designed to fuel an AI-powered ecosystem.
-        </p>
-        <Link href="/token">
-          <button className="mt-4 px-6 py-2 bg-white text-black rounded-2xl font-semibold hover:bg-gray-300 transition">
-            View Full Tokenomics
-          </button>
-        </Link>
-      </div>
+          <div>
+            <h2 className="text-2xl font-semibold text-green-400">5. SHRA DeFi Platform</h2>
+            <ul className="list-disc list-inside text-gray-300 mt-2">
+              <li>Decentralized Staking of SHRA for Trust Index rewards</li>
+              <li>Liquidity Pools (SHRA/USDC) with farming incentives</li>
+              <li>Time-lock staking vaults with boosted governance power</li>
+              <li>AI Query-to-Earn model – get SHRA for contributing insights</li>
+              <li>Transparent analytics dashboard powered by Echo AI</li>
+            </ul>
+          </div>
 
-      {/* Airdrop Section */}
-      <div className="pt-20 text-center">
-        <h2 className="text-xl md:text-2xl font-semibold mb-4">Airdrop Campaign</h2>
-        <p className="text-gray-400 max-w-xl mx-auto">
-          +50% Bonus SHRA for all buyers during the presale period. All tokens will be distributed via airdrop on <span className="text-white font-bold">June 6, 2025</span>.
-        </p>
-        <p className="text-sm text-gray-500 mt-2">Follow our Telegram for claim instructions.</p>
-        <a href="https://t.me/Sbiora_Ai" target="_blank">
-          <button className="mt-4 px-6 py-2 bg-white text-black rounded-2xl font-semibold hover:bg-gray-300 transition">
-            Join Telegram
-          </button>
-        </a>
-      </div>
-
-      {/* Partners Section */}
-      <div className="pt-20 text-center">
-        <h2 className="text-xl md:text-2xl font-semibold mb-4">Official Partners</h2>
-        <p className="text-gray-400 max-w-xl mx-auto mb-6">
-          Strategic partners helping shape the future of decentralized AI.
-        </p>
-        <div className="flex flex-wrap justify-center gap-8">
-          <img src="/partners/shiba-boom.png" alt="Partner 1" className="h-12" />
-          <img src="/partners/partner-2.png" alt="Partner 2" className="h-12" />
-          <img src="/partners/partner-3.png" alt="Partner 3" className="h-12" />
-        </div>
+          <div className="mt-16 text-center">
+            <h2 className="text-xl font-semibold text-white mb-2">Official Links</h2>
+            <div className="flex flex-wrap justify-center gap-4 text-sm text-blue-400">
+              <a href="https://x.com/Shibora_AI" target="_blank" className="underline">X (Twitter)</a>
+              <a href="https://t.me/Sbiora_Ai" target="_blank" className="underline">Telegram Group</a>
+              <a href="https://www.mexc.com/exchange/SHRA_USDC" target="_blank" className="underline">Trade on MEXC</a>
+              <a href="https://www.dextools.io/app/en/solana/pair-explorer" target="_blank" className="underline">View on DEXTools</a>
+              <a href="https://solscan.io/token/SHRA_TOKEN_ADDRESS" target="_blank" className="underline">Solscan Explorer</a>
+              <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=SHRA_TOKEN_ADDRESS" target="_blank" className="underline">Trade on Solana DEX</a>
+              <a href="https://www.coingecko.com/en/coins/shibora-ai" target="_blank" className="underline">CoinGecko Listing</a>
+              <a href="https://coinmarketcap.com/currencies/shibora-ai/" target="_blank" className="underline">CoinMarketCap Listing</a>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   );
