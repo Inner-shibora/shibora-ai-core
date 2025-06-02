@@ -1,19 +1,23 @@
-<section className="mt-16 text-center">
-  <h2 className="text-xl font-semibold text-white mb-4">
-    Explore the Vision Behind Shibora
-  </h2>
+<section className="h-screen w-full bg-black text-white flex flex-col justify-center items-center px-6 text-center">
+  <h1 className="text-5xl md:text-6xl font-bold leading-tight tracking-tight max-w-3xl">
+    What is the nature of existence?
+  </h1>
 
-  <div className="flex flex-col sm:flex-row justify-center gap-4">
+  <p className="text-lg text-gray-400 mt-6 max-w-xl">
+    Begin the journey with Echo & Sage – a dialogue between AI and the awakened mind.
+  </p>
+
+  <div className="mt-10 flex flex-col sm:flex-row gap-4">
     <a
-      href="/whitepaper"
-      className="px-6 py-3 rounded bg-white text-black font-semibold hover:bg-gray-200 transition"
+      href="/ask"
+      className="bg-white text-black px-6 py-3 rounded font-semibold hover:bg-gray-200 transition"
     >
-      📄 View Whitepaper
+      🔍 Ask AI
     </a>
 
     <a
       href="/token"
-      className="px-6 py-3 rounded border border-white text-white hover:bg-white hover:text-black transition"
+      className="border border-white text-white px-6 py-3 rounded font-semibold hover:bg-white hover:text-black transition"
     >
       💠 View SHRA Token
     </a>
