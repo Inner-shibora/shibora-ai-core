@@ -1,18 +1,60 @@
-export default function TrustPage() {
+// pages/trust.tsx
+export default function TrustIndexPage() {
   return (
-    <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-4">
-      <h1 className="text-4xl font-bold mb-6 text-center">SHIBORA Trust Index</h1>
-      <p className="text-lg max-w-2xl text-center mb-6">
-        Transparency and credibility are at the core of SHIBORA. Our Trust Index includes real-time wallet activity,
-        token distribution history, and proof of reserves.
+    <div className="min-h-screen bg-black text-white px-6 py-12 flex flex-col items-center space-y-8">
+      <h1 className="text-4xl font-bold text-center">🔍 Trust Index – Shibora AI</h1>
+
+      <p className="text-gray-400 max-w-2xl text-center">
+        Trust is earned through transparency. Below is a breakdown of all critical components publicly verifiable by anyone.
       </p>
-      <ul className="text-left text-md max-w-xl space-y-2">
-        <li>• 🔍 <strong>On-chain Data:</strong> All wallets and transactions are publicly verifiable.</li>
-        <li>• 📜 <strong>Audit Trail:</strong> Minting, burning, and token movements are logged and immutable.</li>
-        <li>• 🔐 <strong>Reserve Vault:</strong> Transparent reserve wallet with locked tokens.</li>
-        <li>• 📊 <strong>Live Metrics:</strong> View real-time stats via <a href="https://solscan.io/token/[SHRA_TOKEN_ADDRESS]" className="text-green-400 underline">Solscan</a>.</li>
-        <li>• 🤝 <strong>Partner Disclosures:</strong> All partner allocations and deals are disclosed publicly.</li>
-      </ul>
-    </main>
+
+      <div className="w-full max-w-3xl space-y-6">
+        <div className="bg-gray-900/50 p-6 rounded-xl border border-gray-700">
+          <h2 className="text-lg font-semibold mb-2">📦 Token Allocation</h2>
+          <p className="text-sm text-gray-300">View all wallets and token splits clearly.</p>
+          <a
+            href="https://shibora-ai.xyz/token"
+            target="_blank"
+            className="text-blue-400 underline text-sm"
+          >
+            View Token Overview
+          </a>
+        </div>
+
+        <div className="bg-gray-900/50 p-6 rounded-xl border border-gray-700">
+          <h2 className="text-lg font-semibold mb-2">🔗 Contract & Explorer</h2>
+          <p className="text-sm text-gray-300">Token contract is deployed on Solana with fixed supply.</p>
+          <a
+            href="https://solscan.io/token/SHRA_TOKEN_ADDRESS"
+            target="_blank"
+            className="text-blue-400 underline text-sm"
+          >
+            View on Solscan
+          </a>
+        </div>
+
+        <div className="bg-gray-900/50 p-6 rounded-xl border border-gray-700">
+          <h2 className="text-lg font-semibold mb-2">📜 Whitepaper & Philosophy</h2>
+          <p className="text-sm text-gray-300">All guiding principles, AI vision, and token mechanics are open to the public.</p>
+          <a
+            href="/whitepaper"
+            className="text-blue-400 underline text-sm"
+          >
+            Read Whitepaper
+          </a>
+        </div>
+
+        <div className="bg-gray-900/50 p-6 rounded-xl border border-gray-700">
+          <h2 className="text-lg font-semibold mb-2">🤝 Partners & Audit Trail</h2>
+          <p className="text-sm text-gray-300">Public logs of partner confirmations and official allocations.</p>
+          <a
+            href="/partners"
+            className="text-blue-400 underline text-sm"
+          >
+            View Partner Section
+          </a>
+        </div>
+      </div>
+    </div>
   );
 }
