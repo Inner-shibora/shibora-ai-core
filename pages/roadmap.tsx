@@ -1,60 +1,48 @@
 // pages/roadmap.tsx
-export default function RoadmapPage() {
-  const phases = [
-    {
-      title: 'Phase 1 – Genesis',
-      points: [
-        'Idea & Vision Design',
-        'Whitepaper Draft v1.0',
-        'Mint SHRA Token on Solana',
-        'Launch Website + Branding',
-      ],
-    },
-    {
-      title: 'Phase 2 – Expansion',
-      points: [
-        'Airdrop to Community',
-        'Presale Phase Completion',
-        'Listing on DEX (Raydium / Jupiter)',
-        'Community Building via Echo x Sage',
-      ],
-    },
-    {
-      title: 'Phase 3 – Awareness',
-      points: [
-        'Trust Index Integration',
-        'Partner Onboarding',
-        'Launch OneHub Presale System',
-        'AI Public Showcase (Telegram + X)',
-      ],
-    },
-    {
-      title: 'Phase 4 – Long Term',
-      points: [
-        'DAO & Governance',
-        'AI Marketplace Deployment',
-        'Shibora Chain Exploration',
-        'CMC / CoinGecko Listing',
-      ],
-    },
-  ];
-
+export default function Roadmap() {
   return (
-    <div className="min-h-screen bg-black text-white py-12 px-6 flex flex-col items-center">
-      <h1 className="text-4xl font-bold mb-8">🛸 Roadmap – Shibora AI</h1>
+    <div className="max-w-3xl mx-auto mt-10">
+      <h1 className="text-3xl font-bold mb-6">📍 Roadmap – SHIBORA AI</h1>
 
-      <div className="w-full max-w-4xl space-y-10">
-        {phases.map((phase, index) => (
-          <div key={index} className="bg-gray-900/50 p-6 rounded-xl shadow border border-gray-700">
-            <h2 className="text-xl font-semibold mb-4">{phase.title}</h2>
-            <ul className="list-disc list-inside space-y-1 text-gray-300">
-              {phase.points.map((point, idx) => (
-                <li key={idx}>• {point}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+      <div className="space-y-6">
+        <div>
+          <h2 className="text-xl font-semibold">✅ Q1 2025</h2>
+          <ul className="list-disc pl-6">
+            <li>Concept Design: AI x Philosophy</li>
+            <li>Tokenomics Planning (SHRA)</li>
+            <li>Website Initial Launch</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-semibold">✅ Q2 2025</h2>
+          <ul className="list-disc pl-6">
+            <li>Presale Launch + Bonus 50%</li>
+            <li>Airdrop + Initial Partner Programs</li>
+            <li>DEX Listing + Liquidity Bootstrapping</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-semibold">🔄 Q3 2025</h2>
+          <ul className="list-disc pl-6">
+            <li>Echo & Sage AI Integration with Telegram/X</li>
+            <li>Full Launch of AI Conversational Layer</li>
+            <li>Expansion of Trust Index & On-chain Data</li>
+            <li>Multi-language Support for Global Users</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-semibold">🚀 Q4 2025</h2>
+          <ul className="list-disc pl-6">
+            <li>Shibora Launchpad (AI-assisted Token Creation)</li>
+            <li>DAO Governance System Integration</li>
+            <li>AI Marketplace + Plugin Store</li>
+            <li>Listing on Tier-1 CEX + Global Partnerships</li>
+          </ul>
+        </div>
       </div>
     </div>
-  );
+  )
 }
