@@ -1,4 +1,3 @@
-// ✅ index.tsx (วางทับใน /pages/index.tsx ได้เลย)
 import Head from "next/head";
 
 export default function Home() {
